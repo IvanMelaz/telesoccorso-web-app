@@ -1,0 +1,97 @@
+version: '3'
+
+services:
+
+  nginx:
+    image: nginx:alpine
+    restart: always
+    volumes:
+      - ./web-conf:/var/www/html:ro
+      - ./web-conf/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    ports:
+      - 80:80
+    networks:
+      telesoccorso-network:
+        ipv4_address: 10.5.0.6
+
+  smartwatch-server:
+    restart: always
+    build:
+      context: .
+      args:
+        MYSQL_DATABASE: database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com
+        MYSQL_PORT: 3306
+        MYSQL_USERNAME: tsc
+        MYSQL_PASSWORD: Midara01
+        APP_NAME: tscSpringboot-0.0.1-SNAPSHOT.jar
+      dockerfile: ./smartwatch-server/Dockerfile
+    container_name: smartwatch-server
+    image: smartwatch-server
+    environment:
+      - MYSQL_DATABASE=database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com
+      - MYSQL_PORT=3306
+      - MYSQL_USERNAME=tsc
+      - MYSQL_PASSWORD=Midara01
+      - JAVA_APP=java -XX:+ExitOnOutOfMemoryError -XX:+CrashOnOutOfMemoryError -Dspring.profiles.active=default -Dspring.config.location=/opt/spring-boot/lib/smartwatch-server.application.properties -jar /opt/spring-boot/lib/tscSpringboot-0.0.1-SNAPSHOT.jar
+      - APP_NAME=tscSpringboot-0.0.1-SNAPSHOT.jar   
+    ports:
+      - 8090:8090
+    #extra_hosts:
+    #  - "database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com:172.31.6.155"
+    entrypoint: ["./wait-for-it.sh"]
+    networks:
+      telesoccorso-network:
+        ipv4_address: 10.5.0.5
+
+  telesoccorso:
+    restart: always
+    build:
+      context: .
+      args:
+        website_host: telesoccorso
+        database_host: database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com
+      dockerfile: ./telesoccorso/Dockerfile
+    container_name: telesoccorso
+    image: telesoccorso
+    environment:
+      - MYSQL_DATABASE=database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com
+      - MYSQL_PORT=3306
+      - MYSQL_USER=tsc
+      - MYSQL_PASSWORD=Midara01
+      - WEBSITE_HOST_NAME=ec2-34-248-13-143.eu-west-1.compute.amazonaws.com
+      - WEBSITE_VIRTUAL_IP=ec2-34-248-13-143.eu-west-1.compute.amazonaws.com
+      - AWS_XOOPS_URL=http://34.248.13.143
+      - AWS_XOOPS_VIRTUAL_IP=34.248.13.143
+    volumes:
+       - ./web:/var/www
+    ports:
+      - 8080:80
+    #links:
+    #  - "database"
+    #extra_hosts:
+    #  - "database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com:172.31.7.35"
+    #  - "ec2-34-248-13-143.eu-west-1.compute.amazonaws.com:172.31.33.27"
+    networks:
+      telesoccorso-network:
+        ipv4_address: 10.5.0.4
+
+  phpmyadmin:
+    restart: always
+    image: phpmyadmin/phpmyadmin
+    environment:
+      PMA_HOST: database-telesoccorso.cqhnfqgml1n1.eu-west-1.rds.amazonaws.com
+      PMA_PORT: 3306
+    ports:
+      - 8089:80
+    #links:
+    #  - "database"
+    networks:
+      telesoccorso-network:
+        ipv4_address: 10.5.0.3
+
+networks:
+  telesoccorso-network:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.5.0.0/16

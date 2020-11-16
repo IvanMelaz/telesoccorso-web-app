@@ -1,0 +1,41 @@
+<BODY BGCOLOR="FFFFCC">
+
+<div align="center">
+
+
+<div style='font-size:8pt;padding:1px;border:solid silver 2px;width:70px; color:blue''>
+<span id='progress1'>#</span>
+<span id='progress2'>#</span>
+<span id='progress3'>#</span>
+<span id='progress4'>#</span>
+<span id='progress5'>#</span>
+<span id='progress6'>#</span>
+</div>
+
+<script language="javascript">
+var progressEnd = 6;		// set to number of progress <span>'s.
+var progressColor = 'blue';	// set to progress bar color
+var progressInterval = 360;	// set to time between updates (milli-seconds)
+
+var progressAt = progressEnd;
+var progressTimer;
+function progress_clear() {
+	for (var i = 1; i <= progressEnd; i++) document.getElementById('progress'+i).style.backgroundColor = 'transparent';
+	progressAt = 0;
+}
+function progress_update() {
+	progressAt++;
+	if (progressAt > progressEnd) progress_clear();
+	else document.getElementById('progress'+progressAt).style.backgroundColor = progressColor;
+	progressTimer = setTimeout('progress_update()',progressInterval);
+}
+function progress_stop() {
+	clearTimeout(progressTimer);
+	progress_clear();
+}
+progress_update();		// start progress bar
+</script>
+
+
+
+</div>

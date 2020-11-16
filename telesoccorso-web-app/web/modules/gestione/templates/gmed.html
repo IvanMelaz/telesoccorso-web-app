@@ -1,0 +1,60 @@
+<div align="center">
+	<table border="0" width="576">
+		<tr>
+			<td bgcolor="#4682B4" width="109"><font color="#FFFFFF"><strong>
+			<font face="Times New Roman,Times" size="2">Numero:</font></strong></td>
+			<td width="248"><font face="Times New Roman,Times">
+			<input type="text" size="2" name="NUMERO" value="$NUMERO"></font></td>
+			<td bgcolor="#4682B4" width="60"><strong>
+			<font face="Times New Roman,Times" size="2" color="#FFFFFF">Tipo</font></strong></td>
+			<td colspan="2"><font face="Times New Roman,Times">
+			<input type="text" size="15" name="TIPO" value="$TIPO"></font></td>
+			<td width="1"></td>
+		</tr>
+		<tr>
+			<td bgcolor="#4682B4" width="109"><font color="#FFFFFF"><strong>
+			<font face="Times New Roman,Times" size="2">Nominativo</font></strong></font></td>
+			<td width="248"><font face="Times New Roman,Times">
+			<input
+            type="text" size="30" name="NOMINATIVO" value="$NOMINATIVO"></font></td>
+			<td bgcolor="#4682B4" width="60"><strong>
+			<font face="Times New Roman,Times" size="2" color="#FFFFFF">Tel. 1</font></strong></td>
+			<td width="117"><font face="Times New Roman,Times">
+			<input
+            type="text" size="15" name="TEL_1" value="$TEL_1"></font></td>
+			<td width="16"><a href="componi.php?ID=$ID_ALLARME&PHONENUMBER=$TEL_1&AB_CODI=$AB_CODI&NOMINATIVO=$NOMINATIVO&TSCUSER=$username"><img border="0" src="images/cell.jpg" width="32" height="33"></a></td>
+		</tr>
+		<tr>
+			<td bgcolor="#4682B4" width="109">&nbsp;</td>
+			<td width="248">&nbsp;</td>
+			<td bgcolor="#4682B4" width="60"><strong>
+			<font face="Times New Roman,Times" size="2" color="#FFFFFF">Tel. 2</font></strong></td>
+			<td width="117"><font face="Times New Roman,Times">
+			<input
+            type="text" size="15" name="TEL_2" value="$TEL_2"></font></td>
+			<td width="16"><a href="componi.php?ID=$ID_ALLARME&PHONENUMBER=$TEL_2&AB_CODI=$AB_CODI&NOMINATIVO=$NOMINATIVO&TSCUSER=$username"><img border="0" src="images/cell.jpg" width="32" height="33"></a></td>
+		</tr>
+		<tr>
+			<td bgcolor="#4682B4" width="109"><strong>
+			<font face="Times New Roman,Times" size="2" color="#FFFFFF">
+			Referente</font></strong></td>
+			<td width="248"><font face="Times New Roman,Times">
+			<input type="text" size="30" name="REFERENTE1" value="$REFERENTE"></font></td>
+			<td bgcolor="#4682B4" width="60"><font color="#FFFFFF"><strong>
+			<font face="Times New Roman,Times" size="2">Cellulare</font></strong></td>
+			<td width="117"><font face="Times New Roman,Times">
+			<input
+            type="text" size="15" name="CELLULARE" value="$CELLULARE"></font></td>
+			<td width="16"><a href="componi.php?ID=$ID_ALLARME&PHONENUMBER=$CELLULARE&AB_CODI=$AB_CODI&NOMINATIVO=$NOMINATIVO&TSCUSER=$username"><img border="0" src="images/cell.jpg" width="32" height="33"></a></td>
+		</tr>
+		<tr>
+			<td bgcolor="#4682B4" width="109"><strong>
+			<font face="Times New Roman,Times" size="2" color="#FFFFFF">Note</font></strong></td>
+			<td colspan="4"><textarea rows="3" name="NOTE" cols="54">$NOTE</textarea></td>
+		</tr>
+		<tr>
+			<td bgcolor="#4682B4" width="109"><font color="#FFFFFF"><strong>
+			<font face="Times New Roman,Times" size="2">Orario Ambulatorio</font></strong></font></td>
+			<td colspan="4"><textarea rows="3" name="ORARIO" cols="54">$ORARIO</textarea></td>
+		</tr>
+	</table></div>

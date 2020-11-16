@@ -1,0 +1,52 @@
+
+  <form action="gmed_mod_db.php?ID=$ID&amp;AB_CODI=$AB_CODI" method="post">
+    <div align="center">
+      <table border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Numero:</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="2" value="$NUMERO" name="NUMERO" /></font></td>
+            <td bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Tipo</font></strong></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$TIPO" name="TIPO" /></font></td>
+            <td><input type="submit" value="Salva" name="SAVE" style="background-color: #ff3300" /></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Nominativo</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="30" value="$NOMINATIVO" name="NOMINATIVO" /></font></td>
+            <td bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Tel. 1</font></strong></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$TEL_1" name="TEL_1" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Tel. 2</font></strong></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$TEL_2" name="TEL_2" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Referente</font></strong></td>
+            <td><font face="Times New Roman,Times"><input size="30" value="$REFERENTE" name="REFERENTE" /></font></td>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Cellulare</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$CELLULARE" name="CELLULARE" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Note</font></strong></td>
+            <td colspan="3"><textarea name="NOTE" rows="3" cols="54">$NOTE</textarea></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Orario Ambulatorio</font></strong></font></td>
+            <td colspan="3"><textarea name="ORARIO" rows="3" cols="54">$ORARIO</textarea></td></form>
+            <td><form action="gmed_del_db.php?ID=$ID&AB_CODI=$AB_CODI" method="post"><input type="submit" value="ELIMINA" name="ELIMINA" style="border-right: 1px outset; padding-right: 3px; border-top: 1px outset; padding-left: 3px; padding-bottom: 0px; border-left: 1px outset; color: #ffffff; padding-top: 0px; border-bottom: 1px outset; background-color: #808080"></form></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  

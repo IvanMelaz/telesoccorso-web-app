@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<BODY BGCOLOR="FFFFCC">
+<title>Scheda Utente</title>
+</head>
+  <div align="center">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse">
+  <tr>
+    <td>
+      <form action="enti.php" method="POST">
+      <input type="submit" value="VISUALIZZA" name="VISUALIZZA" style="background-color: #FF0000; font-size:10 px"></p>
+      </form>    
+    </td>
+    <td>
+      <form action="ente_mod.php" method="POST">
+      <input type="submit" value="MODIFICA" name="MODIFICA" style="background-color: #FF0000; font-size:10 px"></p>
+      </form>    
+    </td>
+    <td>
+      <form action="ente_ins.html" method="POST">
+      <input type="submit" value="INSERIMENTO" name="INSERIMENTO" style="background-color: #FF0000; font-size:10 px"></p>
+      </form>
+    </td>
+  </tr>
+</table>
+  </div>
+
+  <div align="center">
+    <center>
+<br><centre>
+  <div align="center">
+    <table width="60%">
+      <form action="ente_ins_db.php" method="post">
+        <tbody>
+          <tr>
+            <td colspan="5" align="left">
+              <p align="center"><strong><u><font face="Arial" color="#4682b4" size="4">INSERIMENTO ENTE</font></u></strong><br></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">
+              &nbsp;</td>
+          </tr>
+          <tr>
+            <td colspan="5" align="left">
+          </tr>
+<TR>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">ENTE</font></b></td>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+DESCRIZIONE</font></b></td>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+REFERENTE</font></b></td>
+<td width="30%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">COMUNE</font></b></td />
+<td align="left">&nbsp;</td> 
+</TR>
+<TR>
+<td align="left"><input type="text" size="4" name="ENTE"></td>
+<td align="left"><input type="text" size="30" name="DESCRIZIONE"></td>
+<td align="left"><input size="20" name="REFERENTE" /></td>
+<td width="30%" align="left">
+<input size="20" name="COMUNE" style="float: left"></td />
+<td align="left"></td> 
+</TR>
+<TR>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">N° 
+TELEFONO</font></b></td>
+<td width="30%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+INDIRIZZO</font></b></td />
+<td align="left">&nbsp;</td> 
+</TR>
+<TR>
+    <td width="10%" align="left">&nbsp;</td />
+    <td width="10%" align="left">&nbsp;</td /> 
+    <td width="10%" align="left"><input size="15" name="TEL_2" /></td />  
+    <td width="10%" align="left">
+	<input size="20" name="INDIRIZZO" style="float: left" /></td /> 
+    <td width="15%" align="left">&nbsp;<TR>
+    <td width="10%" align="left">&nbsp;</td />
+    <td width="10%" align="left">&nbsp;</td /> 
+    <td width="10%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">N° 
+	TELEFONO</font></b></td />  
+    <td width="10%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+	CAP</font></b></td /> 
+    <td width="15%" align="left">&nbsp;<TR>
+    <td width="10%" align="left">&nbsp;</td />
+    <td width="10%" align="left">&nbsp;</td /> 
+    <td width="10%" align="left"><input size="15" name="TEL_1" /></td />  
+    <td width="10%" align="left">
+	<input size="5" name="CAP" style="float: left" /></td /> 
+    <td width="15%" align="left"><input type="submit" value="SALVA" name="SALVA" style="border-right: 1px outset; padding-right: 3px; border-top: 1px outset; padding-left: 3px; padding-bottom: 0px; border-left: 1px outset; padding-top: 0px; border-bottom: 1px outset; background-color: #ff0000"></form></td>
+  </tr>

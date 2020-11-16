@@ -1,0 +1,61 @@
+
+  <form action="analisi_mod_db.php?ID=$ID&AB_CODI=$AB_CODI" method="post">
+    <div align="center">
+      <table width="629" border="0">
+        <tbody>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Numero:</font></strong></font></td>
+            <td width="253"><font face="Times New Roman,Times"><input size="2" value="$NUMERO" name="NUMERO" /></font></td>
+            <td width="61" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Telefono</font></strong></td>
+            <td colspan="3"><font face="Times New Roman,Times"><input size="15" value="$TEL_1" name="TEL_1" /></font></td>
+            <td width="53"><input type="submit" value="Salva" name="SAVE" style="background-color: #ff3300" /></td>
+          </tr>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Nominativo</font></strong></font></td>
+            <td width="253"><font face="Times New Roman,Times"><input size="30" value="$NOMINATIVO" name="NOMINATIVO" /></font></td>
+            <td width="61" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Telefono</font></strong></td>
+            <td colspan="3"><font face="Times New Roman,Times"><input size="15" value="$TEL_2" name="TEL_2" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Referente</font></strong></td>
+            <td width="253"><font face="Times New Roman,Times"><input size="30" value="$REFERENTE" name="REFERENTE" /></font></td>
+            <td width="61" bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Cellulare</font></strong></font></td>
+            <td colspan="3"><font face="Times New Roman,Times"><input size="15" value="$CELLULARE" name="CELLULARE" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Indirizzo</font></strong></font></td>
+            <td width="253"><font face="Times New Roman,Times"><input size="30" value="$INDIRIZZO" name="INDIRIZZO" /></font></td>
+            <td width="61" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Fax</font></strong></td>
+            <td colspan="3"><font face="Times New Roman,Times"><input size="15" value="$FAX" name="FAX" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Comune</font></strong></font></td>
+            <td width="253"><font face="Times New Roman,Times"><input size="30" value="$COMUNE" name="COMUNE" /></font></td>
+            <td width="61" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Prov</font></strong></td>
+            <td width="22"><font face="Times New Roman,Times"><input size="2" value="$PROV" name="PROV" /></font></td>
+            <td width="54" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Cap</font></strong></td>
+            <td width="47"><font face="Times New Roman,Times"><input size="5" value="$CAP" name="CAP" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Orario Ambulatorio</font></strong></font></td>
+            <td colspan="5"><textarea name="ORARIO" rows="3" cols="54">$ORARIO</textarea></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td width="109" bgcolor="#4682b4"><strong><font face="Times New Roman,Times" color="#ffffff" size="2">Note</font></strong></td>
+            <td colspan="5"><textarea name="NOTE" rows="3" cols="54">$NOTE</textarea></td></form>
+            <td><form action="analisi_del_db.php?ID=$ID&AB_CODI=$AB_CODI" method="post"><input type="submit" value="ELIMINA" name="ELIMINA" style="border-right: 1px outset; padding-right: 3px; border-top: 1px outset; padding-left: 3px; padding-bottom: 0px; border-left: 1px outset; color: #ffffff; padding-top: 0px; border-bottom: 1px outset; background-color: #808080"></form></td>
+          </tr>
+          <tr>
+            <td width="109">&nbsp;</td>
+            <td colspan="5">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </form>

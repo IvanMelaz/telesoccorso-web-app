@@ -1,0 +1,157 @@
+<div align="center">
+<table>
+    <tr>
+      <td>
+		<p align="center"><font face="Arial" size="4" color="#4682B4">SCHEDA 
+		UTENTE</font></td>
+    </tr>
+</table>
+
+<form action="scheda_mod_db.php?AB_CODI=$AB_CODI" method="POST">
+<div align="center">
+<table>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="372" colspan="3">&nbsp;</td>
+      <td width="40">&nbsp;</td>
+      <td width="36">&nbsp;</td>
+      <td width="46">&nbsp;</td>
+      <td width="48"><input type="submit" value="SALVA" name="SALVA" style="background-color: #FF0000"></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Indirizzo:</font></b></td>
+      <td width="372" colspan="3"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <input type="text" value="$INDIRIZZO"
+      size="48" name="INDIRIZZO"></b></font></td>
+      <td width="40"><b><font size="2" color="#4682B4" face="Arial">Zona:</font></b></td>
+      <td width="36"><font color="#4682B4" face="Arial" size="1"><b><input type="text" size="3" value="$ZONA" name="ZONA"></b></font></td>
+      <td width="46"><b><font face="Arial" size="2" color="#4682B4">Tavola:</font></b></td>
+      <td width="48"><font face="Arial" color="#4682B4" size="1"><b><input type="text"
+      size="5" value="$TAVOLA" name="TAVOLA"></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Comune:</font></b></td>
+      <td width="372" colspan="3"><font color="#4682B4" face="Arial" size="1">
+      <b><input type="text" size="48" value="$COMUNE" name="COMUNE"></b></font></td>
+      <td width="40"><b><font face="Arial" size="2" color="#4682B4">Prov:</font></b></td>
+      <td width="36"><font color="#4682B4" face="Arial" size="1"><b><input type="text" size="3" value="$PROVINCIA" name="PROVINCIA"></b></font></td>
+      <td width="46"><b><font face="Arial" size="2" color="#4682B4">Cap:</font></b></td>
+      <td width="48"><font face="Arial" color="#4682B4" size="1"><b><input type="text"
+      size="5" value="$CAP" name="CAP"></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">D.nascita:</font></b></td>
+      <td width="94"><font face="Arial" color="#4682B4" size="1"><b><input type="text"
+      size="10" value="$DATA_NASCITA" name="DATA_NASCITA"></b></font></td>
+      <td width="78"><b><font size="2" color="#4682B4" face="Arial">L. nascita:</font></b></td>
+      <td width="200"><font color="#4682B4" face="Arial" size="1"><b><input type="text" size="23" value="$LUOGO_NASCITA" name="LUOGO_NASCITA" value></b></font></td>
+      <td width="40"><b><font face="Arial" size="2" color="#4682B4">Peso:</font></b></td>
+      <td width="36"><font face="Arial" color="#4682B4" size="1"><b><input type="text" size="3" value="$PESO" name="PESO"></b></font></td>
+      <td width="46"><b><font size="2" color="#4682B4" face="Arial">Altezza:</font></b></td>
+      <td width="48"><font color="#4682B4" face="Arial" size="1"><b><input type="text" size="5" value="$ALTEZZA" name="ALTEZZA"></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Evidenzia:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="EVIDENZIA" rows="2" cols="70">$EVIDENZIA</textarea></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Note:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="NOTE" rows="5" cols="70">$NOTE</textarea></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Patologia:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="PATOLOGIA" rows="4" cols="70">$PATOLOGIA</textarea></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Terapia:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="TERAPIA" rows="4" cols="70">$TERAPIA</textarea></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Dati tecnici:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="DATI_TECNICI" rows="3" cols="70">$DATI_TECNICI</textarea></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"></td>
+      <td width="542" colspan="7"></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Dati 
+      Abitazione:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="DATI_ABITA" rows="3" cols="70">$DATI_ABITA</textarea></b></font></td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Altri Dati:</font></b></td>
+      <td width="542" colspan="7"><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea name="ALTRO" rows="3" cols="70">$ALTRO</textarea></b></font></td>
+    </tr>
+</table>
+
+    </div>
+
+    </center>
+<br>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="600" id="AutoNumber3">
+    <tr>
+      <td width="16%"><b><font face="Arial" size="2" color="#4682B4">Data 
+      Inserim.:</font></b></td>
+      <td width="16%"><font face="Arial" color="#4682B4" size="1"><b>
+      <input type="text" value="$DATA_INSERIMENTO"
+      size="10" name="DATA_INSERIMENTO"></b></font></td>
+      <td width="17%"><b><font face="Arial" size="2" color="#4682B4">Data 
+      Modifica:</font></b></td>
+      <td width="17%"><font face="Arial" color="#4682B4" size="1"><b>
+      <input type="text" value="$DATA_MODIFICA"
+      size="10" name="DATA_MODIFICA"></b></font></td>
+      <td width="17%"><b><font face="Arial" size="2" color="#4682B4">Data 
+      Aggiornamento:</font></b></td>
+      <td width="17%"><font face="Arial" color="#4682B4" size="1"><b>
+      <input type="text" value="$DATA_AGGIORNAMENTO"
+      size="10" name="DATA_AGGIORNAMENTO"></b></font></td>
+    </tr>
+    <tr>
+      <td width="16%"><b><font face="Arial" size="2" color="#4682B4">Data 
+      Install.:</font></b></td>
+      <td width="16%"><font face="Arial" color="#4682B4" size="1"><b>
+      <input type="text" value="$DATA_INSTALLAZIONE"
+      size="10" name="DATA_INSTALLAZIONE"></b></font></td>
+      <td width="17%"><b><font face="Arial" size="2" color="#4682B4">Data 
+      Disinst.:</font></b></td>
+      <td width="17%"><font face="Arial" color="#4682B4" size="1"><b>
+
+<form method="post"><input type="text" value="$DATA_DISINSTALLAZIONE" 
+      size="10" name="DATA_DISINSTALLAZIONE onfocus="showCalendarControl(this);">
+</form></b></font></td>
+      <td width="17%"><b><font face="Arial" size="2" color="#4682B4">Motivo 
+      Disinst.:</font></b></td>
+      <td width="17%"><font face="Arial" color="#4682B4" size="1"><b>
+      <input type="text" value="$MOTIVO_DISINSTALLAZIONE"
+      size="15" name="MOTIVO_DISINSTALLAZIONE"></b></font></td>
+    </tr>
+    <tr>
+      <td width="16%">&nbsp;</td>
+      <td width="16%">&nbsp;</td>
+      <td width="17%">&nbsp;</td>
+      <td width="17%">&nbsp;</td>
+      <td width="17%">&nbsp;</td>
+      <td width="17%"></td>
+    </tr>
+  </table>
+  </center>
+</div>
+</form>

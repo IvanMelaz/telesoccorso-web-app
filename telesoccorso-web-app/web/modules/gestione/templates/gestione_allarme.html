@@ -1,0 +1,92 @@
+<p align="center"><font color="#0066cc" size="4"><strong>GESTIONE ALLARME CODICE </strong></font><font color="#ff0000" size="5">$AB_CODI</font></p>
+<p align="center"><font color="#0066cc" size="4"><strong>GESTIONE ALLARME ID </strong></font><font color="#ff0000" size="5">$ID_ALLARME</font></p>
+<p align="center"><font color="#0066cc" size="5"><strong>Scarica Prova Come:</strong></font><font color="#0066cc"> </font></p>
+  <div align="center"><center>
+      <table border="0">
+        <tbody>
+          <tr>
+            <td>
+              <form action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=C&AB_CODI=$AB_CODI" method="post">
+                <p><input type="submit" value="Prova da Centrale" name="PROVA_CT" style="background-color: #00ff00" /> </p>
+              </form>
+            </td>
+            <td align="center">
+              <form action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=Cc&AB_CODI=$AB_CODI" method="post">
+                <p><input type="submit" value="Anticipo Prova" name="ANTICIPO" style="background-color: #ff9966" /> </p>
+              </form>
+              </td>
+          </tr>
+        </tbody>
+      </table></center></div><br />
+  <div align="center"><center>
+      <table border="0">
+        <tbody>
+          <tr>
+            <td>
+              <form action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&amp;ALLARM_TYPE=P" method="post">
+                <p><input type="submit" value="Prova da Utente" name="PROVA_UT" style="background-color: #00ff00" /></p>
+              </form>
+            </td>
+            <td>
+              <form action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=CT" method="post">
+                <p><input type="submit" value="Prova Telefonica" name="PROVA_TEL" style="background-color: #00ff00" /></p>
+              </form>
+            </td>
+            <td>
+<form id="form2" name="form2" action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=T" method="post">
+                <p align="center"><input type="submit" value="Prova Tecnico" name="TECNICO" style="background-color: #00ff00" /></p>
+              </form>
+
+            </td>
+          </tr>
+        </tbody>
+      </table></center></div><br />
+  <p align="center"><font color="#0066cc" size="5"><strong>Scarica Allarme Come: </strong></font></p>
+  <div align="center"><center>
+      <table cellspacing="1" border="0">
+        <tbody>
+          <tr>
+            <td>
+              <form action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=E" method="post">
+                <p><input type="submit" value="....Errore...." name="ERRORE" style="background-color: #00ff00" /></p>
+              </form>
+            </td>
+            <td align="center" />
+            <td align="center">
+              <form id="form1" name="form1" action="gestione_allarme_db.php?ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=A" method="post">
+                <p align="center"><input type="submit" value="....Avaria...." name="AVARIA" style="background-color: #ff9966" /></p>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table></center></div><br />
+  <div align="center"><center>
+      <table cellspacing="1" border="0">
+        <tbody>
+          <tr>
+            <td align="center">
+              <form action="gestione_allarme_db.php?AB_CODI=$AB_CODI&amp;ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=R" method="post">
+                <p><input type="submit" value="Allarme Reale" name="REALE" style="background-color: #ff0000" /></p>
+              </form>
+            </td>
+            <td align="center" />
+            <td align="center">
+              <form action="gestione_allarme_db.php?AB_CODI=$AB_CODI&amp;ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=S" method="post">
+                <p align="center"><input type="submit" value="Allarme Sociale" name="SOCIALE" style="background-color: #ff0000" /> </p>
+              </form>
+            </td>
+            <td align="center" />
+            <td align="center">
+              <form action="gestione_allarme_db.php?AB_CODI=$AB_CODI&amp;ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=RT" method="post">
+                <p align="center"><input type="submit" value="Reale Telefonico" name="R_TEL" style="background-color: #ff0000" /></p>
+              </form>
+            </td>
+            <td align="center" />
+            <td align="center">
+              <form action="gestione_allarme_db.php?AB_CODI=$AB_CODI&amp;ID_ALLARME=$ID_ALLARME&ALLARM_TYPE=ST" method="post">
+                <p align="center"><input type="submit" value="Sociale Telefonico" name="S_TEL" style="background-color: #ff0000" /></p>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table></center></div>

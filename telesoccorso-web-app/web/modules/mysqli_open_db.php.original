@@ -1,0 +1,19 @@
+<?php
+
+include "/var/www/mainfile.php";
+
+$host = XOOPS_DB_HOST ;
+$user = "tsc";
+$pw = "midara";
+$db = "telesoccorso";
+
+$mysqli = new mysqli($host,$user,$pw,$db);
+
+/* check connection */ 
+if (mysqli_connect_errno()) {
+   printf("Database error failed: %s\n", mysqli_connect_errno());
+   printf("Connect failed: %s\n", mysqli_connect_error());
+   exit();
+}
+
+?>

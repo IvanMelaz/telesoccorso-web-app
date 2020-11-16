@@ -1,0 +1,47 @@
+<TR><form action="ente_mod_db.php?ID=$ID" method="post">
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">ENTE</font></b></td>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+DESCRIZIONE</font></b></td>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+REFERENTE</font></b></td>
+<td width="30%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">COMUNE</font></b></td />
+<td align="left">&nbsp;</td> 
+</TR>
+<TR>
+<td align="left"><input type="text" size="4" name="ENTE" value="$ENTE"></td>
+<td align="left"><input type="text" size="30" name="DESCRIZIONE" value="$DESCRIZIONE"></td>
+<td align="left"><input size="20" name="REFERENTE" value="$REFERENTE"/></td>
+<td width="30%" align="left">
+<input size="20" name="COMUNE" value="$COMUNE" style="float: left"></td />
+<td align="left"></td> 
+</TR>
+<TR>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="center" bgcolor="#808080"><b><font color="#FFFFFF">N° 
+TELEFONO</font></b></td>
+<td width="30%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+INDIRIZZO</font></b></td />
+<td align="left">&nbsp;</td> 
+</TR>
+<TR>
+    <td width="10%" align="left">&nbsp;</td />
+    <td width="10%" align="left">&nbsp;</td /> 
+    <td width="10%" align="left"><input size="15" name="TEL_2" value="$TEL_2" /></td />  
+    <td width="10%" align="left">
+	<input size="20" name="INDIRIZZO" value="$INDIRIZZO" style="float: left" /></td /> 
+    <td width="15%" align="left">&nbsp;<TR>
+    <td width="10%" align="left">&nbsp;</td />
+    <td width="10%" align="left">&nbsp;</td /> 
+    <td width="10%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">N° 
+	TELEFONO</font></b></td />  
+    <td width="10%" align="center" bgcolor="#808080"><b><font color="#FFFFFF">
+	CAP</font></b></td /> 
+    <td width="15%" align="left"><input type="submit" value="SALVA" name="SALVA" style="border-right: 1px outset; padding-right: 3px; border-top: 1px outset; padding-left: 3px; padding-bottom: 0px; border-left: 1px outset; padding-top: 0px; border-bottom: 1px outset; background-color: #ff0000"><TR>
+    <td width="10%" align="left">&nbsp;</td />
+    <td width="10%" align="left">&nbsp;</td /> 
+    <td width="10%" align="left"><input size="15" name="TEL_1" value="$TEL_1" /></td />  
+    <td width="10%" align="left">
+	<input size="5" name="CAP" value="$CAP" style="float: left" /></td /></form> 
+    <td width="15%" align="left"><form action="ente_del_db.php?ID=$ID" method="post"><input type="submit" value="ELIMINA" name="ELIMINA" style="border-right: 1px outset; padding-right: 3px; border-top: 1px outset; padding-left: 3px; padding-bottom: 0px; border-left: 1px outset; color: #ffffff; padding-top: 0px; border-bottom: 1px outset; background-color: #808080"></form></td>
+  </tr>

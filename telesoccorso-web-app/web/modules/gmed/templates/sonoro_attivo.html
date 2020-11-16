@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" ><head>
+
+</head>
+<script src="script/soundmanager2.js"></script>
+<script>
+soundManager.preferFlash = true;
+soundManager.setup({
+  url: 'swf/',
+  waitForWindowLoad: false,
+  // optional: use 100% HTML5 mode where available
+  // preferFlash: false,
+  onready: function() {
+    var mySound = soundManager.createSound({
+      id: 'aSound',
+      url: 'ring.mp3'
+    });
+    mySound.play();
+  },
+  ontimeout: function() {
+    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+  }
+});
+</script>
+</body>
+</html>

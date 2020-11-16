@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+
+	<title>Menù con descrizione</title>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Language" content="it" />
+
+<style type="text/css">
+<!--
+.menu {font-family:Arial; font-weight:bold}
+
+.menu a{
+text-decoration:none;
+color:black;
+}
+-->
+</style>
+<script language="javascript">
+<!--
+function movein(which,html){
+which.style.background='coral'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=html
+else
+boxdescription.innerHTML=html
+}
+
+function moveout(which){
+which.style.background='bisque'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML='&nbsp;'
+else
+boxdescription.innerHTML='&nbsp;'
+}
+
+//-->
+</script>
+
+</head>
+<BODY BGCOLOR="FFFFCC">
+<br />
+<div align="center">
+
+
+<table width="150" bgcolor="black" border="2" bordercolor="ivory" cellpadding="10" cellspacing="0">
+
+<tr>
+<td class="menu" bordercolor="black" id="choice1" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Scheduler Eventi Italtel')" onmouseout="moveout(this)"" align="center">
+<a href="scheduler_italtel.php" target="schedulatore"><font size="2">Scheduler Italtel</font></a></td></tr>
+
+<td class="menu" bordercolor="black" id="choice3" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Scheduler Eventi Brondi')" onmouseout="moveout(this)" align="center">
+<a href="scheduler_brondi.php" target="schedulatore"><font size="2">Scheduler Brondi</font></a></td></tr>
+
+<td class="menu" bordercolor="black" id="choice3" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Scheduler Eventi Urmet')" onmouseout="moveout(this)" align="center">
+<a href="scheduler_urmet.html" target="schedulatore"><font size="2">Scheduler Urmet</font></a></td></tr>
+
+<td class="menu" bordercolor="black" id="choice3" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Scheduler Centralino')" onmouseout="moveout(this)" align="center">
+<a href="scheduler_centralino.php" target="schedulatore"><font size="2">Scheduler Centralino</font></a></td></tr>
+
+<tr>
+<td bordercolor="black" bgcolor="ivory" height="18" align="center"><font id="boxdescription" face="Verdana" size="2"></font></td></tr>
+</table>
+
+
+</div>
+&nbsp;
+
+
+
+</body>
+</html>

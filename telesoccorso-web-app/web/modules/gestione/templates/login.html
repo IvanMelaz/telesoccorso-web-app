@@ -1,0 +1,33 @@
+<head>
+	<meta http-equiv="Content-Language" content="it">
+	</head>
+
+<BODY BGCOLOR="B0D8FF">
+  
+<div align="center">
+	&nbsp;<p><b><font size="5">Foglio in Uso</font></b></p>
+
+<div align="center">
+
+<iframe width="550" height="150" name="login" src="login_view.php" marginwidth="0" marginheight="0" scrolling="auto" frameborder="0"></iframe>
+
+</div>
+
+	<p><b><font size="5">Cambiare Foglio</font></b></p>
+	<table border="1" width="50%" id="table1">
+	<form action="login_ins_db.php?USER=$USER" method="post">
+		<tr>
+			<td width="78" align="center" bgcolor="#000000"><b>
+			<font size="4" color="#FFFFFF">Operatore</font></b></td>
+			<td align="center"><b>$USER</b></td>
+			<td width="81" align="center" bgcolor="#000000"><b>
+			<font size="4" color="#FFFFFF">Foglio</font></b></td>
+			<td width="107" align="center"><select size="1" name="FOGLIO" style="font-weight: bold"> <option selected="selected">..FOGLIO..</option> 
+			<option value="COMPLEANNO">COMPLEANNO</option>
+			<option value="A1">A1</option> <option value="A2">A2</option> <option value="A3">A3</option> <option value="B1">B1</option> <option value="B2">B2</option> <option value="B3">B3</option> <option value="S1">S1</option> <option value="D1">D1</option> <option value="N1">N1</option></select></td>
+			<td width="80" align="center">
+			<p align="center"><input type="submit" value="SALVA" name="SALVA" style="background-color: #ff0000" /></td>
+		</tr>
+	</form>
+	</table>
+</div>

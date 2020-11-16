@@ -1,0 +1,46 @@
+
+  <form action="mdb_mod_db.php?ID=$ID&AB_CODI=$AB_CODI" method="post">
+    <div align="center">
+      <table border="0">
+        <tbody>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Numero:</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="2" value="$NUMERO" name="NUMERO" /></font></td>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Specialita</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$SPECIALISTA" name="SPECIALISTA" /></font></td>
+            <td><input type="submit" value="Salva" name="SAVE" style="background-color: #ff3300" /></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Nominativo</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="30" value="$MEDICO" name="MEDICO" /></font></td>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Amb</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$TEL_AMB" name="TEL_AMB" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Indirizzo</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="30" value="$INDIRIZZO" name="INDIRIZZO" /></font></td>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Casa</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$TEL_CASA" name="TEL_CASA" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Comune</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="30" value="$COMUNE" name="COMUNE" /></font></td>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Cellulare</font></strong></font></td>
+            <td><font face="Times New Roman,Times"><input size="15" value="$TEL_CELL" name="TEL_CELL" /></font></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4682b4"><font color="#ffffff"><strong><font face="Times New Roman,Times" size="2">Orario Ambulatorio</font></strong></font></td>
+            <td colspan="3"><textarea name="ORARIO" rows="3" cols="54">$ORARIO</textarea></td></form>
+            <td><form action="mdb_del_db.php?ID=$ID&AB_CODI=$AB_CODI" method="post"><input type="submit" value="ELIMINA" name="ELIMINA" style="border-right: 1px outset; padding-right: 3px; border-top: 1px outset; padding-left: 3px; padding-bottom: 0px; border-left: 1px outset; color: #ffffff; padding-top: 0px; border-bottom: 1px outset; background-color: #808080"></form></td>
+          </tr>
+            <td>&nbsp;</td>
+            <td colspan="3">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  

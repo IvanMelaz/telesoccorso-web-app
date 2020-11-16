@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+
+	<title>Menù con descrizione</title>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Language" content="it" />
+
+<style type="text/css">
+<!--
+.menu {font-family:Arial; font-weight:bold}
+
+.menu a{
+text-decoration:none;
+color:black;
+}
+-->
+</style>
+<script language="javascript">
+<!--
+function movein(which,html){
+which.style.background='coral'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=html
+else
+boxdescription.innerHTML=html
+}
+
+function moveout(which){
+which.style.background='bisque'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML='&nbsp;'
+else
+boxdescription.innerHTML='&nbsp;'
+}
+
+//-->
+</script>
+
+</head>
+<BODY BGCOLOR="FFFFCC"><!--CTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dt--><meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" /><meta http-equiv="Content-Language" content="it" /><style type="text/css"></style><br />
+  <div align="center">
+    <table bordercolor="#fffff0" cellspacing="0" cellpadding="10" width="150" bgcolor="#000000" border="2">
+      <tbody>
+        <tr>
+          <td class="menu" id="choice1" onmouseover="movein(this,'Gestione Visite Mediche')" onmouseout="moveout(this)" bordercolor="#000000" align="center" style="cursor: hand; background-color: bisque"><a href="gmed/gestione_gmed.php" target="GESTIONE"><font size="2">GUARDIA MEDICA ASI</font></a></td>
+        </tr>
+        <tr>
+          <td class="menu" id="choice1" onmouseover="movein(this,'Gestione Visite Mediche')" onmouseout="moveout(this)" bordercolor="#000000" align="center" style="cursor: hand; background-color: bisque"><a href="pediatrica/gestione_pediatrica.php" target="GESTIONE"><font size="2">GUARDIA MEDICA PEDIATRICA</font></a></td>
+        </tr>
+        <tr>
+          <td class="menu" id="choice1" onmouseover="movein(this,'Gestione Uscite Infermieri')" onmouseout="moveout(this)" bordercolor="#000000" align="center" style="cursor: hand; background-color: bisque"><a href="infermieri/gestione_infermieri.php" target="GESTIONE"><font size="2">GUARDIA INFERMIERISTICA</font></a></td>
+        </tr>
+        <tr>
+          <td class="menu" id="choice1" onmouseover="movein(this,'Gestione Assistenza Domiciliare')" onmouseout="moveout(this)" bordercolor="#000000" align="center" style="cursor: hand; background-color: bisque"><a href="domicilio/gestione_domicilio.php" target="GESTIONE"><font size="2">ASSISTENZA DOMICILIARE</font></a></td>
+        </tr>
+        <tr>
+          <td class="menu" id="choice1" onmouseover="movein(this,'Scadenziario')" onmouseout="moveout(this)" bordercolor="#000000" align="center" style="cursor: hand; background-color: bisque"><a href="scadenziario/scadenziario.php" target="GESTIONE"><font size="2">SCADENZIARIO</font></a></td>
+        </tr>
+        <tr>
+          <td bordercolor="#000000" align="center" bgcolor="#fffff0" height="18"><font id="boxdescription" face="Verdana" size="2"></font></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>&nbsp;</body>
+</html>

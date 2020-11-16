@@ -1,0 +1,65 @@
+
+<br>
+    <div align="center">
+    <center>
+   <table border="0" cellspacing="1">
+    <tr>
+     <td align="center" rowspan="2">
+<script language="javascript" type="text/javascript">
+<!--
+couleur = new Array ("#FF0000", "#0000FF", "#FF0000", "#0000FF", "#FF0000", "#0000FF");
+var a=0;
+function change_coul()
+{
+Titre=document.getElementById("titre");
+Titre.style.color=couleur[a];
+a++;
+if(a>5) a=0;
+}
+function interval_coul()
+{
+interval=setInterval("change_coul()",600);
+}
+//-->
+</script>
+
+</head>
+<body onload="interval_coul()" onUnload="window.clearInterval(interval)" >
+
+<div align="center">
+
+
+<h1 id="titre">Utente Assente o Ricoverato<br>
+Controllare la Data di Rientro</h1>
+
+
+</div>
+</td>
+</tr>
+</table></center></div>
+    <BR>
+
+    <div align="center">
+    <table border="0" style="border: 1px outset #000000">
+      <tr>
+        <td><b><font color="#336699">Assenza:</font></b></td>
+        <td width="150" bordercolor="#FFFFFF" align="center" bgcolor="#FFFFFF"><b>$DATA_ASSENZA</b></td>
+        <td width="50"></td>
+        <td><b><font color="#336699">Tipo assenza</font></b></td>
+        <td width="150" bordercolor="#FFFFFF" align="center" bgcolor="#FFFFFF"><center><b>$TIPO</b></center></td>   
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td width="150" align="center">&nbsp;</td>
+        <td width="50">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td width="150" align="center">&nbsp;</td>   
+      </tr>
+     <tr>
+        <td align="left"><b><font color="#336699">Note</font></b></td>
+        <td bordercolor="#FFFFFF" align="left" bgcolor="#FFFFFF" colspan="3"><b>$NOTE</b></td>
+        <td width="150" align="left"><center><form action="rientro_ins_db.php?AB_CODI=$AB_CODI&ID=$ID" method="POST"><input type="submit" value="RIENTRO" name="RIENTRO" style="background-color: #FF0000; font-size:10 px"></form></center></td>   
+      </tr>
+    </table>
+    <BR>
+

@@ -1,0 +1,77 @@
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title></title>
+</head>
+
+<body background="images/Backgrd.gif">
+
+    <div align="center"><center><table border="0" cellspacing="1">
+    <tr>
+        <td align="center" rowspan="2">
+        <p align="center">
+        <p align="center"><b><font size="6">Inserisci</font></b></p>
+        <p align="center"><font size="6" color="#ff0000"><STRONG>ASSENZA</STRONG></font></p>
+        <p align="center">
+        &nbsp;
+        </td>
+    </tr>
+    </table></center></div>
+    <BR>
+<form action="assenza_ins_db.php" method="POST">
+    <div align="center">
+    <table border="0">
+      <tr>
+        <td>Tipo assenza</td>
+        <td>    <center>
+    <select name="TIPO" size="1">
+            <option selected>...................</option>
+            <option value="ASSENZA">ASSENZA</option>
+            <option value="RICOVERO">RICOVERO</option>
+    </select>
+    </center></td>   
+      </tr>
+    </table>
+    <BR>
+    <center>
+    <table border="0">
+        <tr>
+            <td>Inserisci Note</td>
+            <td><textarea name="NOTE" rows="4" cols="60"></textarea></td>
+            <td><input type="submit" name="nn" value="Salva"></td>
+        </tr>
+    </table>
+    </center>
+    </div>
+</form>
+
+
+
+<p align="center"><font size="5"><strong><u>Storico Assenze</u></strong></font><br>
+</p>
+<div align="center"><center>
+
+<table border="0" width="80%">
+  <tr>
+    <td width="20%" align="center" bordercolor="#000080" bgcolor="#000000" ><big><strong><font face="Times New Roman,Times" color="#FFFFFF">Assenza</font></strong></big></td>
+    <td width="20%" align="center" bordercolor="#000080" bgcolor="#000000" ><big><strong><font face="Times New Roman,Times" color="#FFFFFF">Rientro</font></strong></big></td>
+    <td bordercolor="#000080" bgcolor="#000000" ><big><strong><font face="Times New Roman,Times" color="#FFFFFF">Note</font></strong></big></td>
+  </tr><% Do UNTIL ass.EOF %>
+  <tr>
+    <td width="20%" align="center" bgcolor="#FFFFFF"><font face="Times New Roman,Times"><font size="3"><% = ASS("ASSENZA") %></font></font></td>
+    <td width="20%" align="center" bgcolor="#FFFFFF"><font face="Times New Roman,Times"><font size="3"><% = ASS("RIENTRO") %></font></font></td>
+    <td bgcolor="#FFFFFF"><font face="Times New Roman,Times"><font size="3"><% = ASS("NOTE") %></font></font></td>
+   </tr>
+
+</table>
+</center>
+</div>
+
+</body>
+</html>
+

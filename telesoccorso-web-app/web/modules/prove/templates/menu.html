@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="it">
+<head>
+
+	<title>Menù con descrizione</title>
+	<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="Content-Language" content="it" />
+
+<style type="text/css">
+<!--
+.menu {font-family:Arial; font-weight:bold}
+
+.menu a{
+text-decoration:none;
+color:black;
+}
+-->
+</style>
+<script language="javascript">
+<!--
+function movein(which,html){
+which.style.background='coral'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML=html
+else
+boxdescription.innerHTML=html
+}
+
+function moveout(which){
+which.style.background='bisque'
+if (document.getElementById)
+document.getElementById("boxdescription").innerHTML='&nbsp;'
+else
+boxdescription.innerHTML='&nbsp;'
+}
+
+//-->
+</script>
+
+</head>
+<BODY BGCOLOR="B0D8FF">
+<br />
+<div align="center">
+
+
+<table width="150" bgcolor="black" border="2" bordercolor="ivory" cellpadding="10" cellspacing="0">
+
+<tr>
+<td class="menu" bordercolor="black" id="choice1" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Genera le Prove del Giorno')" onmouseout="moveout(this)"" align="center">
+<a href="genera_proveday.html" target="proveday"><font size="2">Genera Prove Day</font></a></td></tr>
+
+<td class="menu" bordercolor="black" id="choice2" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Ricerca Multipla')" onmouseout="moveout(this)" align="center">
+<A HREF="#" onClick="window.open('ricerca.html','_blank','toolbar=0, location=0, directories=0, status=0, scrollbars=0, resizable=0, copyhistory=0, menuBar=0, width=550, height=400');return(false)"><font size="2">RICERCA PROVE</font></A></td></tr>
+
+<td class="menu" bordercolor="black" id="choice3" style="background-color:bisque; cursor:hand" onmouseover="movein(this,'Distribuzione delle Prove nella settimana')" onmouseout="moveout(this)" align="center">
+<a href="distribuzione_prove.html" target="proveday"><font size="2">Distribuzione Prove</font></a></td></tr>
+
+<tr>
+<td bordercolor="black" bgcolor="ivory" height="18" align="center"><font id="boxdescription" face="Verdana" size="2"></font></td></tr>
+</table>
+
+
+</div>
+&nbsp;
+
+
+
+</body>
+</html>

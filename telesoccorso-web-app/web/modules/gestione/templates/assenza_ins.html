@@ -1,0 +1,37 @@
+<br />
+  <div align="center"><center>
+      <table cellspacing="1" border="0">
+        <tbody>
+          <tr>
+            <td align="center">
+              <p align="center">&nbsp;</p>
+              <p align="center"><strong><font size="6">Inserisci</font></strong></p>
+              <p align="center"><font color="#ff0000" size="6"><strong>ASSENZA</strong></font></p>
+              <p align="center">&nbsp; </p>
+            </td>
+          </tr>
+        </tbody>
+      </table></center></div><br />
+  <form action="assenza_ins_db.php?AB_CODI=$AB_CODI&ID_ALLARME=$ID_ALLARME" method="post">
+    <div align="center">
+      <table border="0">
+        <tbody>
+          <tr>
+            <td>Tipo assenza</td>
+            <td><center><select size="1" name="TIPO"> <option selected="selected">...................</option> <option value="ASSENZA">ASSENZA</option> <option value="RICOVERO">RICOVERO</option></select> </center></td>
+          </tr>
+        </tbody>
+      </table><br /><center>
+        <table border="0">
+          <tbody>
+            <tr>
+              <td>Inserisci Note</td>
+              <td>
+                <textarea name="NOTE" rows="4" cols="60"></textarea> 
+              </td>
+              <td><input type="submit" value="SALVA" name="SALVA" style="font-size: 10px; background-color: #ff0000" /></td>
+            </tr>
+          </tbody>
+        </table></center>
+    </div>
+  </form>

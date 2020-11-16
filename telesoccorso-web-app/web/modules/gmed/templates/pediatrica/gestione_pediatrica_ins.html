@@ -1,0 +1,147 @@
+<html>
+<body background="FF0000">
+<head>
+<title>ASI</title>
+
+</head>
+
+<body>
+<p align="center"><b><font size="5">INSERIMENTO NUOVE VISITE PEDIATRI-MILANO</font></b></p>
+</div>
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" id="AutoNumber2">
+<form action="gestione_pediatrica_ins_db.php" method="post">
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">CONVENZIONE</font></b></td>
+    <td>
+      <select size="1" name="CONVENZIONE">
+      <option selected>CONVENZIONE</option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">DOSSIER</font></b></td>
+    <td><font color="#4682B4" face="Arial" size="1"><b>
+    <input type="text" size="59" name="DOSSIER" value></b></font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">NOMINATIVO</font></b></td>
+    <td><font color="#4682B4" face="Arial" size="1"><b>
+    <input type="text" size="59" name="NOMINATIVO" value></b></font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">INDIRIZZO</font></b></td>
+    <td><font color="#4682B4" face="Arial" size="1"><b>
+    <input type="text" size="59" name="INDIRIZZO" value></b></font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><font color="#FFFFFF"><b>COMUNE</b></font></td>
+    <td><font color="#4682B4" face="Arial" size="1"><b>
+    <input type="text" size="59" name="COMUNE" value></b></font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">TELEFONO</font></b></td>
+    <td><font color="#4682B4" face="Arial" size="1"><b>
+    <input type="text" size="59" name="TELEFONO" value></b></font></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">MEDICO</font></b></td>
+    <td><select size="1" name="MEDICO">
+      <option selected>--MEDICO--</option>
+      </select>
+    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">TEMPO</font></b></td>
+    <td>
+      <select size="1" name="TEMPO">
+      <option selected>--TEMPO--</option>
+      <option value="30 min">30 min</option>
+      <option value="1 ora">1 ora</option>
+      <option value="1,5 ore">1,5 ore</option>
+      <option value="2 ore">2 ore</option>
+      <option value="3 ore">3 ore</option>
+      <option value="4 ore">4 ore</option>
+      <option value="5 ore">5 ore</option>
+      <option value="6 ore">6 ore</option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">USCITA</font></b></td>
+    <td>
+      <select size="1" name="USCITA">
+      <option selected>--USCITA--</option>
+      <option value="SI">SI</option>
+      <option value="NO">NO</option>
+    </select></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor="#000000"><b>
+    <font color="#FFFFFF">NOTE</font></b></td>
+    <td><font face="Arial" color="#4682B4" size="1">
+      <b>
+      <textarea
+      name="NOTE" rows="4" cols="50"></textarea></b></font></td>
+    <td>
+      &nbsp;</p>
+      <input type="submit" value="SALVA" name="B1" style="background-color: #FFFF00"></td>
+  </tr>
+</form>
+</table>
+  </center>
+</div>
+<p>&nbsp;</p>
+<p align="center">
+<font size="5">VISITE APERTE PEDIATRI-MILANO </font><BR>
+</p>
+<div align="center">
+  <center>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="90%" id="AutoNumber1">
+  <tr>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">DATA</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">ORA</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">CONVENZIONE</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">NOMINATIVO</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">INDIRIZZO</font></b></td>
+        <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">COMUNE</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">TELEFONO</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">MEDICO</font></b></td>
+    <td bgcolor="#000000" align="center">
+    <b>
+    <font color="#FFFFFF">OPE</font></b></td>
+    <td bgcolor="#000000" align="center">
+    </td>
+  </tr>

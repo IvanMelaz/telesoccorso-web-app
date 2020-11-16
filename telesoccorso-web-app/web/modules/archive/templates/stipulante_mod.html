@@ -1,0 +1,258 @@
+<div align="center">
+    <center>
+  <form action="stipulante_mod_db.php?AB_CODI=$AB_CODI" method="POST">
+   <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" width="707" id="AutoNumber1">
+    <tr>
+      <td width="707" colspan="9">
+      <p align="center"><font size="4">STIPULANTE</font></td>
+    </tr>
+    <tr>
+      <td width="62"><strong><font face="Arial" size="2" color="#4682B4">Ente:</font></strong></td>
+      <td width="124" colspan="2">
+		<input type="text" size="2" name="ENTE" value="$ENTE" style="border: 2px dashed #000000; background-color: #C0C0C0"></td>
+      <td width="79"><font size="2" face="Arial" color="#0066CC">
+		<strong>Parentela:</strong></font></td>
+      <td width="148">
+		<input type="text" size="10" name="PARENTELA" value="$PARENTELA"></td>
+      <td width="104"><font size="2" face="Arial" color="#0066CC"><strong>Centrale:</strong></font></td>
+      <td width="93" colspan="2">
+		<input type="text" size="10" name="CENTRALE" value="$CENTRALE" style="border: 2px dashed #000000; background-color: #C0C0C0"></td>
+      <td width="63"><input type="submit" value="SALVA" name="SALVA" style="background-color: #FF0000"></td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2"></td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104"></td>
+      <td width="93" colspan="2"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><font size="2" face="Arial" color="#4682B4"><strong>Nominativo:</strong></font></td>
+      <td width="346" colspan="4"><input type="text" size="45" name="NOMINATIVO" value="$NOMINATIVO"></td>
+      <td width="104"><font size="2" face="Arial" color="#0066CC"><strong>Tel.:</strong></font></td>
+      <td width="93" colspan="2"><input type="text" size="10" name="TELEFONO" value="$TELEFONO"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><font size="2" face="Arial" color="#4682B4"><strong>Referente:</strong></font></td>
+      <td width="346" colspan="4"><input type="text" size="45" name="REFERENTE" value="$REFERENTE"></td>
+      <td width="104"><font size="2" face="Arial" color="#4682B4">
+      <strong>Uff.:</strong></font></td>
+      <td width="93" colspan="2"><input type="text" size="10" name="TEL_UFFICIO" value="$TEL_UFFICIO"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><font size="2" face="Arial" color="#4682B4"><strong>E-mail:</strong></font></td>
+      <td width="346" colspan="4"><input type="text" size="45" name="EMAIL" value="$EMAIL"></td>
+      <td width="104"><font size="2" face="Arial" color="#4682B4"><strong>Cell.:</strong></font></td>
+      <td width="93" colspan="2"><input type="text" size="10" name="CELLULARE" value="$CELLULARE"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="346" colspan="4">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Indirizzo:</font></b></td>
+      <td width="346" colspan="4"><input type="text" size="45" name="INDIRIZZO" value="$INDIRIZZO"></td>
+      <td width="104"><b><font face="Arial" size="2" color="#4682B4">Cap:</font></b></td>
+      <td width="93" colspan="2"><input type="text" size="3" name="CAP" value="$CAP"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Comune:</font></b></td>
+      <td width="346" colspan="4"><input type="text" size="45" name="COMUNE" value="$COMUNE"></td>
+      <td width="104"><b><font face="Arial" size="2" color="#4682B4">Prov:</font></b></td>
+      <td width="15"><input type="text" size="1" name="PROV" value="$PROV"></td>
+      <td width="81">&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><font size="2" face="Arial" color="#4682B4"><strong>CF:</strong></font></td>
+      <td width="346" colspan="4">
+		<input type="text" size="17" name="CF" value="$CF"></td>
+      <td width="104">&nbsp;</td>
+      <td width="15">&nbsp;</td>
+      <td width="81">&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><font size="2" face="Arial" color="#4682B4"><strong>PI:</strong></font></td>
+      <td width="124" colspan="2">
+		<input type="text" size="17" name="PIVA" value="$PIVA"></td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+
+ <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">
+		&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Data 
+		Inserimento:</font></b></td>
+      <td width="124" colspan="2">
+		<input type="text" size="10" name="DATA_INSERIMENTO" value="$DATA_INSERIMENTO" style="border: 2px dashed #000000; background-color: #C0C0C0"></td>
+      <td width="79"><b>
+		<font face="Arial" size="2" color="#4682B4">Data Installazione:</font></b></td>
+      <td width="148">
+		<input type="text" size="10" name="DATA_INSTALLAZIONE" value="$DATA_INSTALLAZIONE" style="border: 2px dashed #000000; background-color: #C0C0C0"></td>
+      <td width="104"><b><font face="Arial" size="2" color="#4682B4">Data 
+		Disinstallazione:</font></b></td>
+      <td width="93" colspan="2">
+		<input type="text" size="10" name="DATA_DISINSTALLAZIONE" value="$DATA_DISINSTALLAZIONE" style="border: 2px dashed #000000; background-color: #C0C0C0"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104"><b><font face="Arial" size="2" color="#4682B4">Motivo 
+		Disinstallazione:</font></b></td>
+      <td width="93" colspan="2">
+		<input type="text" size="15" name="MOTIVO_DISINSTALLAZIONE" value="$MOTIVO_DISINSTALLAZIONE" style="border: 2px dashed #000000; background-color: #C0C0C0"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62"><b><font face="Arial" size="2" color="#4682B4">Note:</font></b></td>
+      <td width="628" colspan="8"><textarea rows="4" name="NOTE" cols="62">$NOTE</textarea></td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="62">
+		&nbsp;</td>
+      <td width="62">&nbsp;</td>
+      <td width="79">
+		&nbsp;</td>
+      <td width="139">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">
+		&nbsp;</td>
+      <td width="63">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="62">
+		&nbsp;</td>
+      <td width="62">&nbsp;</td>
+      <td width="79">
+		&nbsp;</td>
+      <td width="139">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">
+		&nbsp;</td>
+      <td width="63">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">
+		<b><font face="Arial" size="2" color="#4682B4">Contratto:</font></b></td>
+      <td width="79">
+		<input type="text" size="15" name="CONTRATTO" value="$CONTRATTO"></td>
+      <td width="139">&nbsp;</td>
+      <td width="104">
+		<b><font face="Arial" size="2" color="#4682B4">Imponibile:</font></b></td>
+      <td width="93" colspan="2">
+		<input type="text" size="4" name="IMPONIBILE" value="$IMPONIBILE"></td>
+      <td width="63">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">
+		&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">
+		&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">
+		&nbsp;</td>
+      <td width="63">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2"><b><font face="Arial" size="2" color="#4682B4">Pagamento:</font></b></td>
+      <td width="79"><input type="text" size="15" name="PAGAMENTO" value="$PAGAMENTO"></td>
+      <td width="148">&nbsp;</td>
+      <td width="104">
+		<b><font face="Arial" size="2" color="#4682B4">Iva:</font></b></td>
+      <td width="93" colspan="2">
+		<input type="text" size="2" name="IVA" value="$IVA"><b><font size="4">%</font></b></td>
+      <td width="63">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">
+		&nbsp;</td>
+      <td width="63">
+		&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2"><b><font face="Arial" size="2" color="#4682B4">Modo Pagamento:</font></b></td>
+      <td width="79"><input type="text" size="15" name="MODO_PAGAMENTO" value="$MODO_PAGAMENTO"></td>
+      <td width="148">&nbsp;</td>
+      <td width="104">
+		<b><font face="Arial" size="2" color="#4682B4">Importo_iva:</font></b></td>
+      <td width="93" colspan="2">
+		<input type="text" size="4" name="IMPORTO_IVA" value="$IMPORTO_IVA"></td>
+      <td width="63">&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104">&nbsp;</td>
+      <td width="93" colspan="2">
+		&nbsp;</td>
+      <td width="63">&nbsp;</td>
+    </tr>
+   
+    <tr>
+      <td width="62">&nbsp;</td>
+      <td width="124" colspan="2">&nbsp;</td>
+      <td width="79">&nbsp;</td>
+      <td width="148">&nbsp;</td>
+      <td width="104">
+		<b><font face="Arial" size="2" color="#4682B4">Totale:</font></b></td>
+      <td width="93" colspan="2">
+		<input type="text" size="5" name="TOTALE" value="$TOTALE"></td>
+      <td width="63"></td>
+    </tr>
+   
+    </table>
+    </div>
+  </form>

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+<html xmlns="http://www.w3.org/1999/xhtml" ><head>
+
+<script src="AC_QuickTime.js" language="JavaScript" type="text/javascript">
+</script>
+
+<style type="text/css">
+body {font-family:arial; font-style:normal; font-size:13px}
+.autore {font-family:arial; font-style:normal; font-size:115%; font-weight:bold; color:red}
+.categoria {font-family:arial; font-style:normal; font-size:115%; font-weight:bold; color:red}
+.voto {font-family:arial; font-style:normal; font-size:115%; font-weight:bold; color:red}
+.compatibilita {font-family:arial; font-style:normal; font-size:115%; font-weight:bold; color:red}
+</style>
+
+<title>Scopri il giorno</title>
+
+</head>
+<body bgcolor="#E0E0E0">
+<script src="script/soundmanager2.js"></script>
+<script>
+soundManager.setup({
+  url: 'swf/',
+  waitForWindowLoad: false,
+  // optional: use 100% HTML5 mode where available
+  // preferFlash: false,
+  onready: function() {
+    var mySound = soundManager.createSound({
+      id: 'aSound',
+      url: 'ring.mp3'
+    });
+    mySound.play();
+  },
+  ontimeout: function() {
+    // Hrmm, SM2 could not start. Missing SWF? Flash blocked? Show an error, etc.?
+  }
+});
+</script>
+</body>
+</html>

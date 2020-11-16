@@ -1,0 +1,56 @@
+<br><centre>
+  <div align="center">
+    <table width="60%">
+      <form action="prove_ins_db.php?AB_CODI=$AB_CODI" method="post">
+        <tbody>
+          <tr>
+            <td colspan="6">
+              <p align="center"><strong><u><font face="Arial" color="#4682b4" size="4">INSERIMENTO PROVA</font></u></strong><br></p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="6">
+          </tr>
+          <tr>
+            <td align="center" width="20%"><u><font face="Arial" color="#4682b4" size="2">GIORNO</font></u></td>
+            <td align="center" width="20%"><u><font face="Arial" color="#4682b4" size="2">FOGLIO</font></u></td>
+            <td align="center" width="20%"><u><font face="Arial" color="#4682b4" size="2">FASCIA</font></u></td>
+            <td align="center" width="20%"><u><font face="Arial" color="#4682b4" size="2">NOTE</font></u></td>
+            <td align="center" width="20%"><u><font face="Arial" color="#4682b4" size="2">RECALL</font></u></td>
+            <td width="20%">
+          </tr>
+          <tr>
+            <td align="center"><select size="1" name="GIORNO" style="font-weight: bold"> <option selected="selected">..GIORNO..</option> <option value="LUNEDI">LUNEDI</option> <option value="MARTEDI">MARTEDI</option> <option value="MERCOLEDI">MERCOLEDI</option> <option value="GIOVEDI">GIOVEDI</option> <option value="VENERDI">VENERDI</option> <option value="SABATO">SABATO</option> <option value="DOMENICA">DOMENICA</option></select></td>
+            <td align="center"><select size="1" name="FOGLIO" style="font-weight: bold"> <option selected="selected">..FOGLIO..</option> <option value="A1">A1</option> <option value="A2">A2</option> <option value="A3">A3</option> <option value="A4">A4</option> <option value="B1">B1</option> <option value="B2">B2</option> <option value="B3">B3</option> <option value="B4">B4</option> <option value="S1">S1</option> <option value="S2">S2</option> <option value="D1">D1</option> <option value="D2">D2</option> <option value="N1">N1</option> <option value="N2">N2</option></select></td>
+            <td align="center"><select size="1" name="FASCIA" style="font-weight: bold"> <option selected="selected">..FASCIA..</option> <option value="7,00">7,00</option> <option value="7,00-7,30">7,00-7,30</option> <option value="7,00-8,00">7,00-8,00</option> <option value="7,30-8,00">7,30-8,00</option> <option value="8,00">8,00</option> <option value="8,00-8,30">8,00-8,30</option> <option value="8,00-9,00">8,00-9,00</option> <option value="8,00-9,30">8,00-9,30</option> <option value="8,00-10,00">8,00-10,00</option> <option value="9,00">9,00</option> <option value="9,00-9,30">9,00-9,30</option> <option value="9,00-10,00">9,00-10,00</option> <option value="9,00-10,30">9,00-10,30</option> <option value="9,00-11,00">9,00-11,00</option> <option value="9,00-12,00">9,00-12,00</option> <option value="9,30">9,30</option> <option value="9,30-10,00">9,30-10,00</option> <option value="9,30-10,30">9,30-10,30</option> <option value="9,30-11,00">9,30-11,00</option> <option value="9,30-12,00">9,30-12,00</option> <option value="10,00">10,00</option> <option value="10,00-10,30">10,00-10,30</option> <option value="10,00-11,00">10,00-11,00</option> <option value="10,00-12,00">10,00-12,00</option> <option value="10,30">10,30</option> <option value="10,30-11,00">10,30-11,00</option> <option value="10,30-11,30">10,30-11,30</option> <option value="10,30-12,00">10,30-12,00</option> <option value="11,00">11,00</option> <option value="11,00-11,30">11,00-11,30</option> <option value="11,00-12,00">11,00-12,00</option> <option value="11,00-13,00">11,00-13,00</option> <option value="11,30">11,30</option> <option value="11,30-12,00">11,30-12,00</option> <option value="11,30-12,30">11,30-12,30</option> <option value="11,30-13,00">11,30-13,00</option> <option value="12,00">12,00</option> <option value="12,00-12,30">12,00-12,30</option> <option value="12,00-13,00">12,00-13,00</option> <option value="12,00-14,00">12,00-14,00</option> <option value="12,30">12,30</option> <option value="12,30-13,00">12,30-13,00</option> <option value="12,30-13,30">12,30-13,30</option> <option value="12,30-14,00">12,30-14,00</option> <option value="13,00">13,00</option> <option value="13,00-13,30">13,00-13,30</option> <option value="13,00-14,00">13,00-14,00</option> <option value="13,00-15,00">13,00-15,00</option> <option value="13,30">13,30</option> <option value="13,30-14,00">13,30-14,00</option> <option value="13,30-14,30">13,30-14,30</option> <option value="14,00">14,00</option> <option value="14,00-14,30">14,00-14,30</option> <option value="14,00-15,00">14,00-15,00</option> <option value="14,00-16,00">14,00-16,00</option> <option value="14,00-17,00">14,00-17,00</option> <option value="14,00-18,00">14,00-18,00</option> <option value="14,30">14,30</option> <option value="14,30-15,00">14,30-15,00</option> <option value="14,30-15,30">14,30-15,30</option> <option value="15,00">15,00</option> <option value="15,00-15,30">15,00-15,30</option> <option value="15,00-16,00">15,00-16,00</option> <option value="15,00-17,00">15,00-17,00</option> <option value="15,30">15,30</option> <option value="15,30-16,00">15,30-16,00</option> <option value="15,30-16,30">15,30-16,30</option> <option value="16,00">16,00</option> <option value="16,00-16,30">16,00-16,30</option> <option value="16,00-17,00">16,00-17,00</option> <option value="16,00-18,00">16,00-18,00</option> <option value="16,30">16,30</option> <option value="16,30-17,00">16,30-17,00</option> <option value="16,30-17,30">16,30-17,30</option> <option value="17,00">17,00</option> <option value="17,00-17,30">17,00-17,30</option> <option value="17,00-18,00">17,00-18,00</option> <option value="17,00-19,00">17,00-19,00</option> <option value="17,30">17,30</option> <option value="17,30-18,00">17,30-18,00</option> <option value="17,30-18,30">17,30-18,30</option> <option value="18,00">18,00</option> <option value="18,00-18,30">18,00-18,30</option> <option value="18,00-19,00">18,00-19,00</option> <option value="18,00-20,00">18,00-20,00</option> <option value="18,30">18,30</option> <option value="18,30-19,00">18,30-19,00</option> <option value="18,30-19,00">18,30-19,00</option> <option value="19,00">19,00</option> <option value="19,00-19,30">19,00-19,30</option> <option value="19,00-20,00">19,00-20,00</option> <option value="19,00-21,00">19,00-21,00</option> <option value="19,30">19,30</option> <option value="19,30-20,00">19,30-20,00</option> <option value="19,30-20,30">19,30-20,30</option> <option value="20,00">20,00</option> <option value="20,00-20,30">20,00-20,30</option> <option value="20,00-21,00">20,00-21,00</option> <option value="20,00-22,00">20,00-22,00</option> <option value="20,30">20,30</option> <option value="20,30-21,00">20,30-21,00</option> <option value="20,30-21,30">20,30-21,30</option> <option value="21,00">21,00</option> <option value="21,00-21,30">21,00-21,30</option> <option value="21,00-22,00">21,00-22,00</option> <option value="21,30">21,30</option> <option value="21,30-22,00">21,30-22,00</option></select></td>
+            <td align="center"><select size="1" name="NOTE" style="font-weight: bold"> <option selected="selected" /><option value="CT">CT</option>
+			<option value="PRIMA RIPOSA">PRIMA RIPOSA</option>
+			<option value="PRIMA NON è IN CASA">PRIMA NON è IN CASA</option>
+			<option value="DOPO ESCE">DOPO ESCE</option>
+			<option value="FREQUENTA CENTRO ANZIANI">FREQUENTA CENTRO ANZIANI</option>
+			</select></td>
+            <td align="center"><select size="1" name="RICHIAMARE" style="font-weight: bold"> <option selected="selected">NO</option> <option value="SI">SI</option></select></td>
+            <td><input type="submit" value="SALVA" name="SALVA" style="background-color: #ff0000" /></td>
+          </tr>
+        </tbody>
+      </form>
+    </table>
+  </div><br><br><center><u><strong>
+        <table width="60%">
+          <tbody>
+            <tr>
+              <td colspan="6">
+                <p align="center"><strong><u><font face="Arial" color="#4682b4" size="4">MODIFICA PROVE</font></u></strong><br /></p>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="6">
+            </tr>
+            <tr>
+              <td align="center" width="15%"><u><font face="Arial" color="#4682b4" size="2">GIORNO</font></u></td>
+              <td align="center" width="10%"><u><font face="Arial" color="#4682b4" size="2">FOGLIO</font></u></td>
+              <td align="center" width="20%"><u><font face="Arial" color="#4682b4" size="2">FASCIA</font></u></td>
+              <td align="center" width="30%"><u><font face="Arial" color="#4682b4" size="2">NOTE</font></u></td>
+              <td align="center" width="10%"><u><font face="Arial" color="#4682b4" size="2">RECALL</font></u></td>
+              <td align="center" width="15%"></td>
+             </tr>
